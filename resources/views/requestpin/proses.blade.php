@@ -44,11 +44,11 @@
                         // Creating a marker
                         var lat = <?php echo $lokasi_pin[0]; ?>;
                         var lng = <?php echo $lokasi_pin[1]; ?>;
-                        var marker = new L.Marker([lat, lng]).addTo(map).bindPopup('Lokasi PIN').openPopup();
+                        var marker = new L.Marker([lat, lng]).addTo(map).bindPopup('Lokasi Anda').openPopup();
 
                         var lat2 = <?php echo $lokasi_helper[0]; ?>;
                         var lng2 = <?php echo $lokasi_helper[1]; ?>;
-                        var marker2 = new L.Marker([lat2, lng2]).addTo(map).bindPopup('Lokasi Anda').openPopup();
+                        var marker2 = new L.Marker([lat2, lng2]).addTo(map).bindPopup('Lokasi Helper').openPopup();
 
                         _firstLatLng = [lat, lng];
                         _secondLatLng = [lat2, lng2];
